@@ -11,4 +11,5 @@ What resources this repo creates  ?
 2. Python Lambda : Lambda to create and add the IAM policy to the above role
 
 
-Refer to this detailed documentation for more implementation detils
+Refer to this detailed documentation for more implementation detils and code explanation
+ - http://i-cloudconsulting.com/create-iam-policies-using-aws-lambda/
