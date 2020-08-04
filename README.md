@@ -13,3 +13,24 @@ What resources this repo creates  ?
 
 Refer to this detailed documentation for more implementation detils and code explanation
  - http://i-cloudconsulting.com/create-iam-policies-using-aws-lambda/
+ 
+ 
+terraform Commands to run the repo
+Prior to running the commands, make sure to copy the AWS security tokens into command line.
+
+For example from windows command line : 
+ 
+```
+set AWS_ACCESS_KEY_ID=....
+set AWS_SECRET_ACCESS_KEY=....
+set AWS_SESSION_TOKEN=.....
+
+
+# command to initilize environment specific workspace ( dev, qa, prd)
+# each env will have a separate backend config file
+# terraform init -backend-config=backends/dev-env.tf
+# terraform workspace new "dev" ( for creating new workspace) 
+# terraform workspace select "dev" ( for selecting an existing workspace) 
+# terraform plan
+# terraform apply
+```
